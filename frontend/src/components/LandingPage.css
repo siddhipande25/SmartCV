@@ -1,0 +1,141 @@
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .features-section {
+    padding: 80px 20px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature-icon {
+    color: #2563eb;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    color: #6b7280;
+  }
+  
+  .workflow-section {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .workflow-section h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .workflow-steps {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .workflow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .site-footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: white;
+  }
