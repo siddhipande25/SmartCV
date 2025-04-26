@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-API_KEY_LLAMA = "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"
+API_KEY_LLAMA = 'Enter Your API Key'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
