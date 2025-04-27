@@ -66,7 +66,7 @@ const StudyPlanPage = () => {
         return {
           title: match[1].trim(),
           url: match[2].trim(),
-          description: '', // optional, since most of your entries only include title & URL
+          description: '',
         };
       } else {
         return {
@@ -92,7 +92,12 @@ const StudyPlanPage = () => {
   };
 
   if (isLoading) {
-    return <div className="study-plan-container loading">Loading study plan...</div>;
+    return (
+      <div className="study-plan-container loading">
+        <div className="loader"></div>
+        <p>Loading your personalized study plan...</p>
+      </div>
+    );
   }
 
   if (error) {
@@ -127,7 +132,9 @@ const StudyPlanPage = () => {
         ))}
       </div>
 
-      <button className="download-plan-btn" onClick={handleDownloadPlan}>Download Full Plan</button>
+      <button className="download-plan-btn" onClick={handleDownloadPlan}>
+        Download Full Plan
+      </button>
     </div>
   );
 };
