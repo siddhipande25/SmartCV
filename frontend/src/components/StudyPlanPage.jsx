@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './StudyPlanPage.css';
 import axios from 'axios';
 
+const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:8000";
+
 const StudyPlanPage = () => {
   const navigate = useNavigate();
   const [introText, setIntroText] = useState('');
@@ -15,7 +17,7 @@ const StudyPlanPage = () => {
     const fetchStudyPlan = async () => {
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/study-plan",
+          `${API_BASE}/study-plan`,
           {
             analysisResult: JSON.parse(sessionStorage.getItem('analysisResult'))
           },

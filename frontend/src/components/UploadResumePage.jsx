@@ -11,6 +11,8 @@ import {
 import axios from "axios";
 import "./UploadResumePage.css";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:8000";
+
 const UploadResumePage = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState(null);
@@ -133,7 +135,7 @@ const UploadResumePage = () => {
 
     try {
       const resumeResponse = await axios.post(
-        "http://127.0.0.1:8000/siddhu",
+        `${API_BASE}/siddhu`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -147,7 +149,7 @@ const UploadResumePage = () => {
       const resumeData = resumeResponse.data;
 
       const analysisResponse = await axios.post(
-        "http://127.0.0.1:8000/job-description",
+        `${API_BASE}/job-description`,
         {
           job_des: jobDescription,
           file_url: resumeData.file_url,
